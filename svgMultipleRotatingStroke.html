@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --vPathDashoffset: 157;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #333333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body svg{
+            width: 499px;
+            animation: rotates 5s linear infinite;
+        }
+        @keyframes rotates{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{   
+                transform: rotate(360deg);
+            }
+        }
+        .path1{
+            stroke-dasharray: 628;
+            stroke-dashoffset: 0;
+            stroke: #4285f4;
+            animation: animatePath1 2s linear infinite;
+            animation-delay: 300ms;    
+        }
+        .path2{
+            stroke-dasharray: 538;
+            stroke-dashoffset: 200;
+            stroke: #ea4335;
+            animation: animatePath2 2s linear infinite;
+            animation-delay: 200ms; 
+        }
+        .path3{
+            stroke-dasharray: 440;
+            stroke-dashoffset: 200;
+            stroke: #fbbc05;
+            animation: animatePath3 2s linear infinite;
+            animation-delay: 100ms; 
+        }
+
+        .path4{
+            stroke-dasharray: 345;
+            stroke-dashoffset: 200;
+            stroke: #34a853;
+            animation: animatePath4 2s linear infinite;
+        }
+
+
+
+        
+        @keyframes animatePath1{
+            0%{
+                stroke-dashoffset: 0;
+            }
+            100%{
+                stroke-dashoffset: 1248;
+            }
+        }
+        @keyframes animatePath2{
+            0%{
+                stroke-dashoffset: 0;
+            }
+            100%{
+                stroke-dashoffset: 1076;
+            }
+        }
+        @keyframes animatePath3{
+            0%{
+                stroke-dashoffset: 0;
+            }
+            100%{
+                stroke-dashoffset: 880;
+            }
+        }
+        @keyframes animatePath4{
+            0%{
+                stroke-dashoffset: 0;
+            }
+            100%{
+                stroke-dashoffset: 690;
+            }
+        }
+    </style>
+</head>
+<body>  
+    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200px" height="200px" viewBox="-10 -10 220 220" style="enable-background:new 0 0 607.764 607.764;"
+	 xml:space="preserve">
+     <path class="path4" fill="none" stroke-width=10px
+            d="
+            M 142.22 64.752 a 1 1 0 1 0 -84.451 70.526 a 1 1 0 0 0 84.451 -70.526"
+        />
+        <path class="path3" fill="none" stroke-width=10px
+            d="M 100 30  a 1 1 0 1 0 0 140 
+                        a 1 1 0 1 0 0 -140"
+        />
+        <path class="path2" fill="none"stroke-width=10px
+            d="M 160.929 159.199 a 1 1 0 1 0 -121.781 -118.533 a 1 1 0 0 0 121.781 118.533 "
+        />
+        <path class="path1" fill="none"stroke-width=10px
+            d="
+            M 29.56 29 a 1 1 0 1 0 140.91 141.84 a 1 1 0 0 0 -140.91 -141.84 "
+        />
+	
+    </svg> 
+</body>
+</html>
